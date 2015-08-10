@@ -1,0 +1,35 @@
+/* Plone styles */
+
+.pln-brand {
+  color: #007bb3 !important;
+}
+
+.pln-brand-dark {
+  color: #16a1e3 !important;
+}
+
+.pln-brand-inverse {
+  color: #fff !important;
+}
+
+.pln-brand-bg {
+  background-color: #16a1e3 !important;
+}
+
+.pln-banner {
+  padding: 15px !important;
+  color: #fff;
+  background-color: #007bb3;
+  font-size: 100px !important;
+}
+
+#logo {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: transparent url("../../images/Logo_small.png") top left no-repeat;
+  width: 200px;
+  height: 61px;
+  text-indent: 9999em;
+  z-index: 999;
+}
