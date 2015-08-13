@@ -473,158 +473,146 @@ def clear_extra_cookies_on_logout(event):
                 <h3>Dexterity</h3>
 
                 <p>
-                    Subsystem zur Erstellung von Content Objekten ab Plone 5
+                    Subsystem zur Erstellung von Content Objekten
                 </p>
+                <p class="fragment">&#10004; verfügbar seit Plone 4.1</p>
             </section>
 
             <section data-background="images/bg_title.jpg">
                 <span class="header-line">
-                    <span>A</span> Aufzählungen, Text
+                    <span>C</span> Don't Panic
                 </span>
 
-                <h2>Zitate</h2>
+                <h2>The Three Ds</h2>
+
+                <h3>Diazo</h3>
 
                 <blockquote>
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        We write XSLT so you do not have to...
                     </p>
-                    <small>-- Lorem Ipsum Generator</small>
+                    <small>-- The Beards of Plone</small>
                 </blockquote>
+
+                <p class="fragment">&#10004; verfügbar seit Plone 4.0</p>
             </section>
 
             <section data-background="images/bg_title.jpg">
                 <span class="header-line">
-                    <span>A</span> Aufzählungen, Text
+                    <span>C</span> Don't Panic
                 </span>
+                <h2>The Three Ds</h2>
+                <h3>Diazo</h3>
 
-                <h2>Überschriften</h2>
-
-                <h1>1. Ordnung</h1>
-                <h2>2. Ordnung</h2>
-                <h3>3. Ordnung</h3>
-                <h4>4. Ordnung</h4>
-                <h5>5. Ordnung</h5>
-                <h6>6. Ordnung</h6>
+                <figure>
+                    <img src="images/diazo-concept.png" alt="Diazo" />
+                </figure>
             </section>
 
             <section data-background="images/bg_title.jpg">
                 <span class="header-line">
-                    <span>A</span> Aufzählungen, Text
+                    <span>C</span> Don't Panic
                 </span>
+                <h2>The Three Ds</h2>
+                <h3>Diazo</h3>
 
-                <h2>Code</h2>
+                <pre class="xml"><code data-trim contenteditable>
+&lt;rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
 
-                <pre class="php"><code data-trim contenteditable>
-var phonecatApp = angular.module('phonecatApp', []);
+    &lt;theme href="theme.html" /&gt;
 
-phonecatApp.controller('PhoneListCtrl', function ($scope) {
-    $scope.phones = [
-        {'name': 'Nexus S',
-         'snippet': 'Fast just got faster with Nexus S.',
-         'age': 1},
-        {'name': 'Motorola XOOM™ with Wi-Fi',
-         'snippet': 'The Next, Next Generation tablet.',
-         'age': 2},
-        {'name': 'MOTOROLA XOOM™',
-         'snippet': 'The Next, Next Generation tablet.',
-         'age': 3}
-    ];
+    &lt;merge attributes="class" css:content="body" css:theme="body" /&gt;
+    &lt;replace css:theme="title" css:content="title" /&gt;
 
-    $scope.orderProp = 'age';
-});
-</code></pre>
-        </section>
+    &lt;replace css:content-children="#content"
+        css:theme-children="#content" /&gt;
+
+    &lt;replace css:content="#sidebar"
+        css:theme="#below-content-teaser" /&gt;
+    &lt;drop css:theme="#theme-banner-slot"
+        css:if-not-content="#backend-masthead" /&gt;
+                </code></pre>
+            </section>
 
             <section data-background="images/bg_title.jpg">
-                <ul class="topics three">
-                    <li>
-                        <span class="up">A</span>
-                        <span class="down">Aufzählungen, Text</span>
-                    </li>
-                    <li class="active">
-                        <span class="up">B</span>
-                        <span class="down">Bilder, Videos</span>
-                    </li>
-                    <li>
-                        <span class="up">C</span>
-                        <span class="down">Ende</span>
-                    </li>
+                <span class="header-line">
+                    <span>C</span> Don't Panic
+                </span>
+                <h2>The Three Ds</h2>
+                <h3>Diazo</h3>
+
+                <pre class="xml"><code data-trim contenteditable>
+<!-- Required marker -->
+&lt;replace css:content="span.required"&gt;
+  &lt;xsl:copy&gt;
+    &lt;xsl:copy-of select="@*" /&gt;
+      &lt;xsl:attribute name="class"&gt;
+        &lt;xsl:value-of select="./@class" /&gt; text-warning
+      &lt;/xsl:attribute&gt;
+    &lt;xsl:apply-templates /&gt;
+  &lt;/xsl:copy&gt;
+&lt;/replace&gt;
+                </code></pre>
+            </section>
+
+            <section data-background="images/bg_title.jpg">
+                <span class="header-line">
+                    <span>C</span> Don't Panic
+                </span>
+
+                <h2>The Three Ds</h2>
+
+                <h3>Deco</h3>
+
+                <p>
+                    Drag&Drop Reordering and Inline Content Editing
+                </p>
+                <p class="fragment">&#10004; verfügbar seit Plone 5.0a1 als Mosaic</p>
+            </section>
+
+            <section data-background="images/bg_title.jpg">
+                <span class="header-line">
+                    <span>C</span> Don't Panic
+                </span>
+
+                <h2>The supposed to be Plone 6.0</h2>
+
+                <p>Agenda 2020</p>
+                <ul>
+                  <li>plone.restapi</li>
+                  <li>Javascript based CMS Layer</li>
                 </ul>
             </section>
 
             <section data-background="images/bg_title.jpg">
-                <span class="header-line">
-                    <span>B</span> Bilder, Videos
-                </span>
+                <h1 class="pln-brand-inverse">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 width="64px" height="64px" viewBox="0 0 40.784 40.686" enable-background="new 0 0 40.784 40.686" xml:space="preserve">
+  <g>
+  	<circle fill="white" cx="17.815" cy="11.516" r="4.402"/>
+  	<path fill="white" d="M31.167,20.311c0,2.434-1.969,4.401-4.403,4.401c-2.427,0-4.401-1.97-4.401-4.401
+  		c0-2.433,1.975-4.4,4.401-4.4C29.2,15.909,31.167,17.879,31.167,20.311z"/>
+  	<circle fill="white" cx="17.801" cy="29.131" r="4.402"/>
+  	<g>
+  		<path fill="white" d="M20.441-0.045C9.207-0.044,0.1,9.063,0.099,20.298C0.1,31.532,9.207,40.639,20.441,40.641
+  			c11.235-0.002,20.341-9.106,20.343-20.343C40.783,9.063,31.677-0.044,20.441-0.045z M31.891,31.747
+  			c-2.937,2.934-6.972,4.742-11.45,4.743c-4.478-0.001-8.513-1.812-11.45-4.743C6.058,28.81,4.25,24.775,4.249,20.298
+  			c0.001-4.479,1.809-8.513,4.743-11.45c2.937-2.934,6.972-4.742,11.45-4.743c4.478,0.001,8.513,1.811,11.45,4.743
+  			c2.934,2.938,4.742,6.973,4.743,11.45C36.633,24.775,34.825,28.81,31.891,31.747z"/>
+  	</g>
+  </g>
+</svg> Plone
+                </h1>
 
-                <h2>einfaches Bild</h2>
-
-                <figure>
-                    <img src="lib/images/web20tag.png" alt="Web 2.0 Tagcloud" />
-                </figure>
+                <p>Fragen?</p>
             </section>
 
             <section data-background="images/bg_title.jpg">
-                <span class="header-line">
-                    <span>B</span> Bilder, Videos
-                </span>
-
-                <h2>Bild mit Untertitel</h2>
-
-                <figure>
-                    <img src="lib/images/web20tag.png" alt="Web 2.0 Tagcloud" />
-                    <figcaption>Tagcloud Web 2.0: neue Technologien</figcaption>
-                </figure>
-            </section>
-
-            <section data-background="images/bg_title.jpg">
-                <span class="header-line">
-                    <span>B</span> Bilder, Videos
-                </span>
-
-                <h2>Bild rechts gefloatet</h2>
-
-                <figure class="right">
-                    <img src="lib/images/web20tag.png" alt="Web 2.0 Tagcloud" />
-                    <figcaption>Tagcloud Web 2.0: neue Technologien</figcaption>
-                </figure>
-            </section>
-
-            <section data-background="images/bg_title.jpg">
-                <span class="header-line">
-                    <span>B</span> Bilder, Videos
-                </span>
-
-                <h2>Bild links gefloatet</h2>
-
-                <figure class="left">
-                    <img src="lib/images/web20tag.png" alt="Web 2.0 Tagcloud" />
-                    <figcaption>Tagcloud Web 2.0: neue Technologien</figcaption>
-                </figure>
-            </section>
-        </section>
-
-        <section>
-            <section data-background="images/bg_title.jpg">
-                <ul class="topics three">
-                    <li>
-                        <span class="up">A</span>
-                        <span class="down">Aufzählungen, Text</span>
-                    </li>
-                    <li>
-                        <span class="up">B</span>
-                        <span class="down">Bilder, Videos</span>
-                    </li>
-                    <li class="active">
-                        <span class="up">C</span>
-                        <span class="down">Ende</span>
-                    </li>
-                </ul>
-            </section>
-
-            <section data-background="images/bg_title.jpg">
-                <h2>Danke</h2>
-                <p>Team23 GmbH &amp; Co. KG<br/>www.team23.de</p>
+                <h2>Danke für die Aufmerksamkeit</h2>
+                <p>Christoph @ Team23 GmbH &amp; Co. KG<br/>www.team23.de</p>
             </section>
         </section>
     </div>
